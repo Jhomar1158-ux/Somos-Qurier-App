@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBotones"
+    tools:context=".activities.pantalla_diagnostico">
+    <!--
+        <TextView
+            android:id="@+id/saludo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="72dp"
+            android:text="¡Hola Nicolás!\nDe acuerdo al diagnóstico,\nusted presenta:"
+            android:textSize="27sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/fondo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:translationZ="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/encabezado"
+        app:srcCompat="@drawable/fondo_dia" />
+    -->
+    <ImageView
+        android:id="@+id/encabezado"
+        android:layout_width="412dp"
+        android:layout_height="242dp"
+        android:translationZ="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/encabezado_guinda_dia" />
+
+    <ImageView
+        android:id="@+id/doctor"
+        android:layout_width="175dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="12dp"
+        android:translationZ="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/triaje"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pregunta"
+        app:srcCompat="@drawable/doctor_guinda_dia" />
+
+    <ImageView
+        android:id="@+id/bolaDeColor"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="40dp"
+        android:translationZ="80dp"
+        app:layout_constraintBottom_toBottomOf="@+id/doctor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/doctor"
+        app:layout_constraintTop_toBottomOf="@+id/encabezado"
+        app:srcCompat="@drawable/diagnostico_verde_dia" />
+
+    <ImageView
+        android:id="@+id/posibleEnfermedad"
+        android:layout_width="324dp"
+        android:layout_height="324dp"
+        android:layout_marginTop="12dp"
+        android:translationZ="90dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pregunta"
+        app:srcCompat="@drawable/informacion_covid_dia" />
+
+    <ImageView
+        android:id="@+id/estadosDeSalud"
+        android:layout_width="324dp"
+        android:layout_height="324dp"
+        android:layout_marginTop="12dp"
+        android:translationZ="90dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/semaforo"
+        app:srcCompat="@drawable/estados_de_salud_dia" />
+
+    <ImageButton
+        android:id="@+id/retornar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="320dp"
+        android:onClick="volver"
+        android:background="?android:selectableItemBackground"
+        android:translationZ="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/atras" />
+
+    <ImageButton
+        android:id="@+id/continuar"
+        android:layout_width="166dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="12dp"
+        android:background="?android:selectableItemBackground"
+        android:onClick="siguiente"
+        android:translationZ="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/triaje"
+        app:srcCompat="@drawable/continuar_dia" />
+
+    <ImageButton
+        android:id="@+id/triaje"
+        android:layout_width="96dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="12dp"
+        android:background="?android:selectableItemBackground"
+        android:onClick="hacerTriaje"
+        android:translationZ="90dp"

@@ -1,0 +1,2 @@
+rootProject.name='Curri'
+include ':app'

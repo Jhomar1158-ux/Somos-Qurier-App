@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "706264503128",
+    "firebase_url": "https://currierapp-7aafd.firebaseio.com",
+    "project_id": "currierapp-7aafd",
+    "storage_bucket": "currierapp-7aafd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:706264503128:android:8418c1cfc2536882cacb2d",
+        "android_client_info": {
+          "package_name": "com.optic.curri"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "706264503128-ma92c5ejl8svbbom3jnrnecfuj7m5397.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.optic.curri",
+            "certificate_hash": "3e59ca53f0e7dbd6600a23b43c2db42262963362"
+          }
+        },
+        {
+          "client_id": "706264503128-3q6hknrjfhto75ti46q3le3rujv0bu68.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4lKAi7bk2WNFxuBfckzPwVLqkYVqENN8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "706264503128-3q6hknrjfhto75ti46q3le3rujv0bu68.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_barraMenu_dia"
+    tools:context=".activities.pantalla_sintomas">
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="190dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:paddingTop="120dp">
+
+            <Button
+                android:id="@+id/fiebre"
+                android:layout_width="155dp"
+                android:layout_height="155dp"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="62dp"
+                android:background="@drawable/dr"
+                android:drawableBottom="@drawable/fiebre"
+                android:gravity="center|center_horizontal|fill_vertical"
+                android:text="@string/fiebre_"
+                android:textAllCaps="false"
+                android:textColor="#3A6978"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/ojos"
+                android:layout_width="155dp"
+                android:layout_height="155dp"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="23dp"
+                android:background="@drawable/dr"
+                android:drawableBottom="@drawable/ojos"
+                android:gravity="center|center_horizontal|fill_vertical"
+                android:text="@string/ojos_irritados"
+                android:textColor="#3A6978"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fiebre" />
+
+            <Button
+                android:id="@+id/dificultad"
+                android:layout_width="155dp"
+                android:layout_height="155dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="62dp"
+                android:background="@drawable/dr"
+                android:drawableBottom="@drawable/falta"
+                android:gravity="center|center_horizontal|fill_vertical"
+                android:text="@string/dificultad_para_respirar"
+                android:textColor="#3A6978"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/fiebre"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/estornudos"
+                android:layout_width="155dp"
+                android:layout_height="155dp"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="23dp"
+                android:background="@drawable/dr"
+                android:drawableBottom="@drawable/estornudos"
+                android:drawablePadding="-10dp"
+                android:gravity="center|center_horizontal|fill_vertical"
+                android:padding="6dp"
+                android:paddingStart="-6dp"
+                android:paddingEnd="6dp"
+                android:text="@string/estornudos"
+                android:textAllCaps="false"
+                android:textColor="#3A6978"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fatiga" />
+
+            <Button
+                android:id="@+id/debilidad"
+                android:layout_width="155dp"
+                android:layout_height="155dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="23dp"
+                android:background="@drawable/dr"
+                android:drawableBottom="@drawable/debilidad"
+                android:gravity="center|center_horizontal|fill_vertical"
+                android:text="@string/debilidad"
+                android:textAllCaps="false"
+                android:textColor="#3A6978"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@id/fatiga"
+                app:layout_constraintTop_toBottomOf="@+id/tos" />
+
+            <Button
+                android:id="@+id/congestion"
+                android:layout_width="155dp"
+                android:layout_height="155dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="23dp"
+                android:background="@drawable/dr"
+                android:drawableBottom="@drawable/congestion"
+                android:drawablePadding="-10dp"
+                android:gravity="bottom|center|center_horizontal"
+                android:padding="6dp"
+                android:text="@string/congesti_n_nasal"
+                android:textColor="#3A6978"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/estornudos"
+                app:layout_constraintTop_toBottomOf="@+id/debilidad" />
+
+            <Button
+                android:id="@+id/fatiga"
+                android:layout_width="155dp"
+                android:layout_height="155dp"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="23dp"
+                android:background="@drawable/dr"
+                android:drawableBottom="@drawable/fatiga"
+                android:gravity="center_horizontal|fill_vertical"
+                android:text="@string/fatiga"
+                android:textColor="#3A6978"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ojos" />
+
+            <Button
+                android:id="@+id/diagnostico"
+                android:layout_width="160dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="220dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/dr"
+                android:text="@string/diagn_stico"
+                android:textColor="#3A6978"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/congestion" />
+
+            <Button
+                android:id="@+id/tos"
+                android:layout_width="155dp"
+                android:layout_height="155dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="23dp"
+                android:background="@drawable/dr"
+                android:clickable="true"
+                android:drawableBottom="@drawable/tos_sinto"
+                android:focusable="true"
+                android:gravity="center_horizontal|fill_vertical"
+                android:text="@string/tos_"
+                android:textAllCaps="false"
+                android:textColor="#3A6978"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@+id/ojos"
+                app:layout_constraintTop_toBottomOf="@+id/dificultad" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:background="@drawable/addtoolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="SÍNTOMAS DE HOY"
+        app:titleMarginBottom="100dp"
+        app:titleMarginStart="110dp"
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Large"
+        app:titleTextColor="#245754 " />
+
+    <ImageButton
+        android:id="@+id/atras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:background="#DFDFDF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/atrass" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="#245754 " />
+
+</androidx.constraintlayout.widget.ConstraintLayout>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
