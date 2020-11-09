@@ -67,7 +67,7 @@ public class DetailRequestActivity extends AppCompatActivity implements OnMapRea
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_request);
-        MyToolbar.show(this,"TUS DATOS ", true);
+        MyToolbar.show(this,"Información", true);
 
         mMapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         mMapFragment.getMapAsync(this);
@@ -104,6 +104,10 @@ public class DetailRequestActivity extends AppCompatActivity implements OnMapRea
         Intent intent = new Intent(DetailRequestActivity.this, RequestCourierActivity.class);
         intent.putExtra("origin_lat",mOriginLatlng.latitude);
         intent.putExtra("origin_lng",mOriginLatlng.longitude);
+        intent.putExtra("origin",mExtraOrigin);
+        intent.putExtra("destination",mExtraDestination);
+        intent.putExtra("destination_lat",mDestinationLatlng.latitude);
+        intent.putExtra("destination_lng",mDestinationLatlng.longitude);
         startActivity(intent);
         finish();
     }

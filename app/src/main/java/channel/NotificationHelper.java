@@ -13,6 +13,7 @@ import android.os.Build;
 import androidx.annotation.RequiresApi;
 import androidx.core.app.NotificationCompat;
 
+import com.google.android.gms.common.internal.ICancelToken;
 import com.optic.curri.R;
 
 public class NotificationHelper extends ContextWrapper {
@@ -52,28 +53,62 @@ public class NotificationHelper extends ContextWrapper {
     }
     //para versiones de API mayor al 26
     @RequiresApi(api = Build.VERSION_CODES.O)
-    public Notification.Builder getNotification(String title, String body, PendingIntent intent, Uri soundUri){
-
-        return new Notification.Builder(getApplicationContext(),CHANNEL_ID)
+    public Notification.Builder getNotification(String title, String body, PendingIntent intent, Uri soundUri) {
+        return new Notification.Builder(getApplicationContext(), CHANNEL_ID)
                 .setContentTitle(title)
                 .setContentText(body)
                 .setAutoCancel(true)
                 .setSound(soundUri)
                 .setContentIntent(intent)
-                .setSmallIcon(R.drawable.ic_start_man);
-
+                .setSmallIcon(R.drawable.ic_start_man)
+                .setStyle(new Notification.BigTextStyle()
+                        .bigText(body).setBigContentTitle(title));
     }
-    //Para versiones inferiores a la de Android Oreo
-    public NotificationCompat.Builder getNotificationoldAPI(String title, String body, PendingIntent intent, Uri soundUri){
 
-        return new NotificationCompat.Builder(getApplicationContext(),CHANNEL_ID)
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    public Notification.Builder getNotificationActions(String title,
+                                                       String body,
+                                                       Uri soundUri,
+                                                       Notification.Action acceptAction ,
+                                                       Notification.Action cancelAction) {
+        return new Notification.Builder(getApplicationContext(), CHANNEL_ID)
+                .setContentTitle(title)
+                .setContentText(body)
+                .setAutoCancel(true)
+                .setSound(soundUri)
+                .setSmallIcon(R.drawable.ic_start_man)
+                .addAction(acceptAction)
+                .addAction(cancelAction)
+                .setStyle(new Notification.BigTextStyle()
+                        .bigText(body).setBigContentTitle(title));
+    }
+
+    public NotificationCompat.Builder getNotificationOldAPI(String title, String body, PendingIntent intent, Uri soundUri) {
+        return new NotificationCompat.Builder(getApplicationContext(), CHANNEL_ID)
                 .setContentTitle(title)
                 .setContentText(body)
                 .setAutoCancel(true)
                 .setSound(soundUri)
                 .setContentIntent(intent)
-                .setSmallIcon(R.drawable.ic_start_man);
+                .setSmallIcon(R.drawable.ic_start_man)
+                .setStyle(new NotificationCompat.BigTextStyle().bigText(body).setBigContentTitle(title));
     }
 
+    public NotificationCompat.Builder getNotificationOldAPIActions(
+            String title,
+            String body,
+            Uri soundUri,
+            NotificationCompat.Action acceptAction,
+            NotificationCompat.Action cancelAction) {
+        return new NotificationCompat.Builder(getApplicationContext(), CHANNEL_ID)
+                .setContentTitle(title)
+                .setContentText(body)
+                .setAutoCancel(true)
+                .setSound(soundUri)
+                .setSmallIcon(R.drawable.ic_start_man)
+                .addAction(acceptAction)
+                .addAction(cancelAction)
+                .setStyle(new NotificationCompat.BigTextStyle().bigText(body).setBigContentTitle(title));
+    }
 
 }
