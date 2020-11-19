@@ -18,6 +18,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.optic.curri.R;
 
 import dmax.dialog.SpotsDialog;
+import includes.MyToolbar;
 import models.Couriers;
 import providers.AuthProvider;
 import providers.CuriProvider;
@@ -44,6 +45,7 @@ public class RegisterCuriActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_curi);
 
+        MyToolbar.show(this,"Registro del courier", true);
 
         mAuthProvider = new AuthProvider();
         mCuriProvider = new CuriProvider();

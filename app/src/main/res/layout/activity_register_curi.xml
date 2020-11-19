@@ -7,37 +7,23 @@
     android:fitsSystemWindows="true"
     tools:context="activities.Curi.RegisterCuriActivity">
 
+    <include layout="@layout/action_bar_toolbar"/>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:orientation="vertical"
-        android:layout_gravity="top"
-        android:gravity="center"
-        android:background="@color/colorPrimaryDark">
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:layout_height="550dp"
         android:layout_gravity="center"
         android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="130dp"
-        android:layout_marginTop="60dp"
+        android:orientation="vertical"
 
-        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
-        >
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="Registro"
-            android:textAlignment="center"
-            android:textColor="@color/color_black"
-            android:textSize="40sp"
-            />
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
         <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_width="337dp"
+            android:layout_height="504dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -47,8 +33,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_margin="10dp">
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="35dp"
@@ -78,8 +64,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_margin="10dp">
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="35dp"
@@ -91,8 +77,7 @@
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        >
+                        android:layout_marginLeft="5dp">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/textInputEmail"
@@ -110,8 +95,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_margin="10dp">
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="35dp"
@@ -123,8 +108,7 @@
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        >
+                        android:layout_marginLeft="5dp">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/textInputEdad"
@@ -142,21 +126,20 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_margin="10dp">
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="35dp"
                         android:layout_height="35dp"
                         android:layout_marginTop="10dp"
-                        android:src="@drawable/icono_genero_2"/>
+                        android:src="@drawable/icono_genero_2" />
 
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        >
+                        android:layout_marginLeft="5dp">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/textInputGenero"
@@ -174,8 +157,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_margin="10dp">
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="35dp"
@@ -187,8 +170,7 @@
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        >
+                        android:layout_marginLeft="5dp">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/textInputNumero"
@@ -207,8 +189,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_margin="10dp">
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="35dp"
@@ -218,8 +200,8 @@
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
-                        android:layout_marginLeft="5dp"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/textInputPassword"
@@ -234,40 +216,29 @@
                 </LinearLayout>
 
 
-
-
             </LinearLayout>
 
         </ScrollView>
 
 
-
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_gravity="bottom"
-        android:gravity="center"
-        android:layout_marginBottom="80dp">
+        android:gravity="bottom">
 
         <Button
             android:id="@+id/btnRegister"
-            android:layout_width="200dp"
-            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="REGISTRAR"
             android:background="@drawable/rounded_button"
             android:backgroundTint="@color/color_orange_light"
+            android:layout_margin="30dp"
             android:textColor="@color/color_white" />
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:orientation="vertical"
-        android:layout_gravity="bottom"
-        android:gravity="center"
-        android:background="@color/colorPrimaryDark">
     </LinearLayout>
 
 

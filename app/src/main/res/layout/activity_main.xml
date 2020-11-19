@@ -24,7 +24,7 @@
         <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Qurier"
+        android:text="beta v1.0.0"
         android:textAlignment="center"
         android:textColor="@color/color_white"
         android:layout_margin="30dp"
