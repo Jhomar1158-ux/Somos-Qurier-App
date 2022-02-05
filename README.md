@@ -4,7 +4,6 @@ It's an app that connects you with your environment to make purchases that will 
 
 Website: https://quierounqurier.epizy.com
 
-##Progress
-<a href='https://postimg.cc/06SYz0hF' target='_blank'><img src='https://i.postimg.cc/06SYz0hF/Captura-de-pantalla-2022-02-05-170505.png' width="250px" alt='Captura-de-pantalla-2022-02-05-170505'/></a>
-<a href='https://postimg.cc/6TtrQRcb' target='_blank'><img src='https://i.postimg.cc/6TtrQRcb/Captura-de-pantalla-2022-02-05-170421.png' width="250px" alt='Captura-de-pantalla-2022-02-05-170421'/></a>
+<a href='https://postimg.cc/06SYz0hF' target='_blank'><img src='https://i.postimg.cc/06SYz0hF/Captura-de-pantalla-2022-02-05-170505.png' alt='Captura-de-pantalla-2022-02-05-170505'/></a>
+<a href='https://postimg.cc/6TtrQRcb' target='_blank'><img src='https://i.postimg.cc/6TtrQRcb/Captura-de-pantalla-2022-02-05-170421.png'  alt='Captura-de-pantalla-2022-02-05-170421'/></a>
 <a href='https://postimg.cc/8s4hf5np' target='_blank'><img src='https://i.postimg.cc/8s4hf5np/Captura-de-pantalla-2022-02-05-170331.png' border='0' alt='Captura-de-pantalla-2022-02-05-170331'/></a>
